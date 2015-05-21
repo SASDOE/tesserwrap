@@ -37,7 +37,7 @@ def find_closest_libname(lib_names, search_path=None):
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-extra_lib_paths = ['/usr/local/lib']
+extra_lib_paths = ['/usr/local/lib', '/app/.apt/lib']
 
 tesseract_possible_names = ['tesseract_api', 'tesseract']
 tesseract_lib_name = find_closest_libname(
